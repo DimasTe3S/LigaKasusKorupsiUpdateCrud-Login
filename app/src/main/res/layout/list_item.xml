@@ -1,0 +1,23 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <!-- Ikon kasus -->
+    <ImageView
+        android:id="@+id/itemIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <!-- Nama kasus -->
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kasus 1"
+        android:textSize="14sp"
+        android:gravity="center" />
+</LinearLayout>
