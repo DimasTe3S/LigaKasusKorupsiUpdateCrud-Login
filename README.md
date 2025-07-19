@@ -1,91 +1,55 @@
-activity_main.xml
-![activitymain](https://github.com/user-attachments/assets/7f877d6b-714e-40a7-a395-a9b52159a28b)
+# LigaKasusKorupsiUpdateCrud-Login
+UAS Pemrograman Mobile ITBS_Dimas Tegar Setiawan_221232023
 
-androidmanifest.xml
-![image](https://github.com/user-attachments/assets/88c71ba7-daaf-4f00-85a2-d26c2f837b84)
-![image](https://github.com/user-attachments/assets/53fe163c-73bf-40c3-9a7c-eca814a34053)
+Deskripsi: Aplikasi yang mengembangkan dari sebelumnya di Liga Kasus Korupsi saat UTS. Updatenya berupa CRUD dan API yang digantikan dengan SQLLite. Tidak banyak yang berubah dari ui yang masuk berkesan sederhana, tapi lebih ke crud yang dapat mengupdate kasus di apk.
 
+Tujuan Aplikasi "Liga Kasus Korupsi" adalah aplikasi mobile berbasis Android yang dirancang untuk mendokumentasikan dan menampilkan informasi mengenai berbagai kasus korupsi di Indonesia. Aplikasi ini bertujuan untuk memberikan gambaran yang terstruktur dan mudah diakses mengenai detail setiap kasus, termasuk nama, deskripsi, dan foto terkait.
 
-activity_list.xml
-![image](https://github.com/user-attachments/assets/c9dd8018-4ec0-4591-ab8e-dbfc91b22bc2)
-![image](https://github.com/user-attachments/assets/2eba8d2b-17f3-44ee-8fa7-fb1b0014dd59)
+Fitur Utama
+Daftar Kasus: Menampilkan semua kasus korupsi dalam format grid yang interaktif.
+Detail Kasus: Menyajikan informasi rinci deskripsi, foto untuk setiap kasus yang dipilih.
+Tambah & Edit Kasus: Memungkinkan pengguna untuk menambah kasus baru atau memodifikasi detail kasus yang sudah ada, termasuk mengunggah foto.
+Navigasi Kasus: Fitur untuk berpindah antar kasus di halaman detail.
+Manajemen Data Lokal: Data kasus disimpan secara lokal menggunakan database SQLite.
 
-activity_detail.xml
-![image](https://github.com/user-attachments/assets/346956fa-df89-4673-a407-bb1fb317f435)
-![image](https://github.com/user-attachments/assets/7c7febe3-689c-4a11-93e8-1c955be44c6c)
-![image](https://github.com/user-attachments/assets/cf361f6e-adf6-4a8a-9cab-aa54d31b29e1)
-![image](https://github.com/user-attachments/assets/9c9d6b5a-2044-4c7b-9ebd-f5e885d95527)
-![image](https://github.com/user-attachments/assets/4fbce210-4d0f-4f00-abfe-1c9b82a35474)
+Teknologi yang Digunakan
 
-list_item.xml
-![image](https://github.com/user-attachments/assets/6979c108-6c48-490d-9148-8f77b68b8084)
+Bahasa Pemrograman: Java, XML (untuk UI), SQL (untuk database).
+Platform: Android
+Database: SQLite
+Pustaka Libraries: Glide (untuk pemuatan gambar), AndroidX Libraries.
 
-mainactiviy.java
-![image](https://github.com/user-attachments/assets/1a3bed74-79b0-4ab3-a9cc-c644cb3f3975)
+Screenshot Aplikasi
+Berikut adalah beberapa tampilan (screenshot) dari aplikasi "Liga Kasus Korupsi":
+![WhatsApp Image 2025-07-19 at 16 14 05_7faa723a](https://github.com/user-attachments/assets/43bb41b0-2523-426c-a512-f53673e081df)
+![WhatsApp Image 2025-07-19 at 16 14 05_96b9bbbd](https://github.com/user-attachments/assets/6bb4c205-0747-4950-9525-233b97ee163b)
+![WhatsApp Image 2025-07-19 at 16 14 06_7b166227](https://github.com/user-attachments/assets/0fc5b433-688f-450c-9a13-be2955bf6c9f)
+![WhatsApp Image 2025-07-19 at 16 14 06_34e49051](https://github.com/user-attachments/assets/48db9e1d-2456-412f-b8f1-41fb3f623b48)
 
-listactiviy.java
-![image](https://github.com/user-attachments/assets/f6fc2215-6e93-4611-8c24-c37094911bdf)
+Halaman Daftar Kasus
+![WhatsApp Image 2025-07-19 at 16 14 07_2286dc6d](https://github.com/user-attachments/assets/9943cfeb-08de-43c7-a593-a2f9b88f2037)
 
-detailactivity.java
-![image](https://github.com/user-attachments/assets/5df9606b-28ab-42a7-a543-a870afba5d24)
-![image](https://github.com/user-attachments/assets/076db26e-854f-4bed-967a-2dea0a9a299d)
-![image](https://github.com/user-attachments/assets/ebbe6433-8c9f-4e75-97a1-9609b272477f)
-![image](https://github.com/user-attachments/assets/18085a7c-1dc0-475d-91ec-40f3b62a6580)
-![image](https://github.com/user-attachments/assets/11d03c65-e4a6-41da-b868-ba113acd4857)
-![image](https://github.com/user-attachments/assets/b3a57f09-3455-4bcb-9a2c-2d1178fac53e)
+Halaman Detail Kasus
+![WhatsApp Image 2025-07-19 at 16 14 13_8bfaabb0](https://github.com/user-attachments/assets/8a070273-4da4-4a2a-84f2-5257153a3023)
+![WhatsApp Image 2025-07-19 at 16 14 13_39e95236](https://github.com/user-attachments/assets/73183323-e1dc-4fa6-8a4b-4839c5e9ce96)
+![WhatsApp Image 2025-07-19 at 16 14 13_e7e0e6b5](https://github.com/user-attachments/assets/b6b61d24-43b5-4b15-a2e6-d9e3592fb9f3)
+![WhatsApp Image 2025-07-19 at 16 14 13_6e8d9510](https://github.com/user-attachments/assets/7ad2b7be-5d47-4717-9476-54f4d75858c5)
+![WhatsApp Image 2025-07-19 at 16 14 14_16d51600](https://github.com/user-attachments/assets/c7d1ee41-83df-4450-a4a7-836f4e820cdc)
+![WhatsApp Image 2025-07-19 at 16 14 14_06a95ee0](https://github.com/user-attachments/assets/e40956cc-3f6a-4b4e-96f1-c53dac20c40d)
+![WhatsApp Image 2025-07-19 at 16 14 14_4f7f8cd9](https://github.com/user-attachments/assets/43762857-bb9f-4745-91dc-038571b99b59)
+![WhatsApp Image 2025-07-19 at 16 14 15_72995301](https://github.com/user-attachments/assets/023f8087-f16a-4f93-af44-02b0cc7b2fdd)
+![WhatsApp Image 2025-07-19 at 16 14 15_b1be0bc8](https://github.com/user-attachments/assets/85920572-1004-4636-b630-b8701a96cd70)
 
-kasusadapter.java
-![image](https://github.com/user-attachments/assets/d3dc335d-a1dc-42b3-aef6-7cd0f1f5a852)
-![image](https://github.com/user-attachments/assets/eedeb82d-5efd-4857-93d4-f5e03348b046)
-![image](https://github.com/user-attachments/assets/c473b3de-7aa7-4324-bb92-cb237eed29d7)
+Halaman Tambah/Edit Kasus
+![WhatsApp Image 2025-07-19 at 16 14 15_9f811f97](https://github.com/user-attachments/assets/77ab9c88-9276-494e-a9f3-5078232c108e)
+![WhatsApp Image 2025-07-19 at 16 14 16_66742851](https://github.com/user-attachments/assets/1e1ebe95-bad8-4400-9529-4d38af10ae54)
+![WhatsApp Image 2025-07-19 at 16 15 03_38c201ba](https://github.com/user-attachments/assets/38e9e404-83bb-4da7-92d7-1b6dd4803eb7)
+![WhatsApp Image 2025-07-19 at 16 15 04_f38a28e6](https://github.com/user-attachments/assets/78f1f398-69d1-435d-9ce4-354dd027bcf3)
 
-Fitur Aplikasi
-1. Halaman Utama (MainActivity): Menampilkan ikon aplikasi dan tombol masuk menuju daftar kasus.
-2. Halaman Daftar Kasus (ListActivity): Berisi daftar kasus korupsi dalam tampilan grid yang dapat diklik untuk melihat detail.
-3. Halaman Detail Kasus (DetailActivity): Menampilkan deskripsi lengkap kasus, gambar utama, dan gambar tambahan jika tersedia.
-4. Navigasi Antar-Kasus: Terdapat tombol untuk berpindah ke kasus sebelumnya dan selanjutnya.
+Halaman Login
+![WhatsApp Image 2025-07-19 at 16 14 05_124509ab](https://github.com/user-attachments/assets/8be56309-59e5-42e6-9620-0b6ad14d6351)
+![WhatsApp Image 2025-07-19 at 16 14 06_6e59a87d](https://github.com/user-attachments/assets/2a14d556-61e2-4c08-b608-b01389989200)
 
-Struktur Navigasi
-1. MainActivity → ListActivity
-2. ListActivity → DetailActivity
-3. DetailActivity → Next/Previous Case atau Kembali ke ListActivity
-
-app/
-├── java/com/example/ligakasuskorupsi/
-│   ├── MainActivity.java           # Halaman utama dengan tombol masuk
-│   ├── ListActivity.java           # Halaman daftar kasus
-│   ├── DetailActivity.java         # Halaman detail kasus
-│   └── KasusAdapter.java           # Adapter untuk menghubungkan data ke GridView
-│
-├── res/
-│   ├── layout/
-│   │   ├── activity_main.xml       # Layout halaman utama
-│   │   ├── activity_list.xml       # Layout halaman daftar kasus
-│   │   ├── activity_detail.xml     # Layout halaman detail kasus
-│   │   └── list_item.xml           # Layout untuk setiap item di grid
-│   │
-│   ├── mipmap/                     # Folder ikon aplikasi dan gambar kasus
-│   └── values/                     # File nilai seperti strings.xml, colors.xml, dll.
-│
-└── AndroidManifest.xml             # Deklarasi aktivitas dan konfigurasi aplikasi
-
-AppCompat - Untuk kompatibilitas tampilan pada berbagai versi Android.
-GridView - Menampilkan daftar kasus dalam bentuk grid.
-Intent - Navigasi antar-activity.
-LinearLayout - Struktur layout vertikal dan horizontal.
-ImageView - Menampilkan gambar kasus.
-TextView - Menampilkan judul dan deskripsi kasus.
-
-Seluruhnya menggunakan ujicoba melalui handphone dengan cara usb debug > install aplikasi
-![Gambar WhatsApp 2025-05-17 pukul 12 09 08_5e13e5d1](https://github.com/user-attachments/assets/7c833b6c-c1ab-4135-89a1-35286114943f)
-![Gambar WhatsApp 2025-05-17 pukul 12 09 08_9f4366f4](https://github.com/user-attachments/assets/d5fb1695-d4d3-4a7c-bcd6-9728578da55b)
-![Gambar WhatsApp 2025-05-17 pukul 12 09 08_4ddc2933](https://github.com/user-attachments/assets/5044368a-17bd-4da6-89d6-17a98575c9c0)
-![Gambar WhatsApp 2025-05-17 pukul 12 09 09_e4aba871](https://github.com/user-attachments/assets/a75babda-8858-45e8-b7d5-94976243a094)
-![Gambar WhatsApp 2025-05-17 pukul 12 09 09_f00776c9](https://github.com/user-attachments/assets/d5d4ad79-a7bc-4f93-90a4-2c043c1cb180)
-![Gambar WhatsApp 2025-05-17 pukul 12 09 09_e62a42e1](https://github.com/user-attachments/assets/435b0a0f-b8a2-48be-af5b-f34b6fb67995)
-![Gambar WhatsApp 2025-05-17 pukul 12 09 11_3c8775a5](https://github.com/user-attachments/assets/33f74b2d-7f27-43a5-93ae-3bfb98061718)
-![Gambar WhatsApp 2025-05-17 pukul 12 09 11_48248c1f](https://github.com/user-attachments/assets/8872c4de-0c9f-4bc0-b880-42cbd3c21955)
-![Gambar WhatsApp 2025-05-17 pukul 12 09 11_0a290ff7](https://github.com/user-attachments/assets/a4c9d05e-3ddb-418c-b50a-871ca75f2aa0)
-![Gambar WhatsApp 2025-05-17 pukul 12 09 12_eb4d81ff](https://github.com/user-attachments/assets/40897f08-fd7b-4483-b906-c2a9ae47ce41)
-![Gambar WhatsApp 2025-05-17 pukul 12 09 12_c83635e9](https://github.com/user-attachments/assets/4bb36d90-053d-441e-94ca-2d70b8d80ee4)
-![Gambar WhatsApp 2025-05-17 pukul 12 09 12_9c196a2f](https://github.com/user-attachments/assets/5a89814d-fcad-4e5e-a101-4e6d674b2124)
+[Dimas Tegar SEtiawan]
+[221232023]
+*Dibuat untuk UAS Pemrograman Mobile ITBS*
