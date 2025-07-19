@@ -7,15 +7,18 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.bumptech.glide.Glide; // BARIS INI HARUS ADA DAN BENAR
+
+import com.example.ligakasuskorupsi.models.Kasus;
 
 import java.util.List;
 
 public class KasusAdapter extends BaseAdapter {
 
     private final Context context;
-    private final List<String> kasusList;
+    private final List<Kasus> kasusList;
 
-    public KasusAdapter(Context context, List<String> kasusList) {
+    public KasusAdapter(Context context, List<Kasus> kasusList) {
         this.context = context;
         this.kasusList = kasusList;
     }
@@ -32,7 +35,7 @@ public class KasusAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
-        return position;
+        return kasusList.get(position).getId();
     }
 
     @Override
@@ -44,26 +47,15 @@ public class KasusAdapter extends BaseAdapter {
         ImageView itemIcon = convertView.findViewById(R.id.itemIcon);
         TextView itemName = convertView.findViewById(R.id.itemName);
 
-        // Set nama kasus secara custom
-        String[] namaKasus = {
-                "Kasus PT. Pertamina",
-                "Kasus PT. Timah",
-                "Kasus PT. BLBI",
-                "Kasus PT. Duta Palma Group",
-                "Kasus PT. TPPI",
-                "Kasus PT. Asabri",
-                "Kasus PT. Jiwasraya",
-                "Kasus To be continue",
-                "Kasus To be continue",
-                "Kasus To be continue"
-        };
+        Kasus kasus = kasusList.get(position);
 
-        itemName.setText(namaKasus[position]);
+        itemName.setText(kasus.getNama());
 
-        // Set icon kasus berdasarkan nomor
-        int iconResId = context.getResources().getIdentifier(
-                "ic_kasus_" + (position + 1), "mipmap", context.getPackageName());
-        itemIcon.setImageResource(iconResId);
+        if (kasus.getFotoPath() != null && !kasus.getFotoPath().isEmpty()) {
+            Glide.with(context).load(kasus.getFotoPath()).into(itemIcon);
+        } else {
+            itemIcon.setImageResource(R.mipmap.ic_launcher);
+        }
 
         return convertView;
     }

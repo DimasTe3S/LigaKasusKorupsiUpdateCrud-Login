@@ -1,16 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ligakasuskorupsi">
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
         android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/tikuskorup"
         android:label="@string/app_name"
+        android:roundIcon="@mipmap/tikuskorup"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LigaKasusKorupsi">
+        android:theme="@style/Theme.LigaKasusKorupsi"
+        tools:targetApi="31"
+        android:requestLegacyExternalStorage="true">
 
-        <!-- MainActivity sebagai halaman utama -->
         <activity
-            android:name=".MainActivity"
+            android:name=".auth.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,16 +26,25 @@
             </intent-filter>
         </activity>
 
-        <!-- ListActivity sebagai halaman list kasus -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
         <activity
             android:name=".ListActivity"
             android:exported="false" />
 
-        <!-- DetailActivity sebagai halaman detail kasus -->
         <activity
             android:name=".DetailActivity"
             android:exported="false" />
 
-    </application>
+        <activity
+            android:name=".auth.RegisterActivity"
+            android:exported="false" />
 
+        <activity
+            android:name=".AddEditCaseActivity"
+            android:exported="false" />
+
+    </application>
 </manifest>
